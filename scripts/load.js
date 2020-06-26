@@ -7,8 +7,12 @@ function preload(){
     imagemGameOver = loadImage('imagens/assets/game-over.png');
     imagemTelaInicial = loadImage('imagens/assets/telaInicial.png');
 
-    //somDoJogo = loadSound('sons/trilha_jogo.mp3');
+    imagemVida = loadImage('imagens/assets/coracao.png')
+
+    somDoJogo = loadSound('sons/trilha_jogo.mp3');
     somDoPulo = loadSound('sons/somPulo.mp3');
 
     fonteTelaInicial = loadFont('imagens/assets/fonteTelaInicial.otf')
+
+    fita = loadJSON('fita/fita.json')
   }

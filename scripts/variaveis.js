@@ -11,6 +11,10 @@ let imagemInimigoVoador;
 let imagemGameOver;
 let imagemTelaInicial;
 
+let imagemVida
+let vida;
+let vidas;
+
 let fonteTelaInicial
 
 let cenario;
@@ -31,6 +35,13 @@ let cenaAtual = 'telaInicial';
 let cenas;
 
 let telaInicial;
+
+
+
+
+let fita;
+
+
 
 const matrizPersonagem = [
   [0,0],

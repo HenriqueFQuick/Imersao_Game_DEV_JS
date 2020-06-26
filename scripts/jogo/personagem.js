@@ -12,6 +12,7 @@ class Personagem extends Animacao{
     this.alturaDoPulo = -50;
 
     this.pulos = 0;
+    this.invencivel = false;
   }  
   pula(){
     if(this.pulos < 2)
@@ -30,7 +31,16 @@ class Personagem extends Animacao{
     }
   }
 
+  tornaInvencivel(){
+    this.invencivel = true;
+    setTimeout(() => {
+      this.invencivel = false;
+    }, 1000)
+  }
+
   estaColidindo(inimigo){
+    if(this.invencivel)
+      return false;
     const precisao = .7
     //noFill()
     //rect(this.x, this.y, this.largura*precisao, this.altura*precisao)
